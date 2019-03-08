@@ -5,8 +5,6 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
-import java.util.Set;
-import java.util.SortedSet;
 
 public class BuzzwordCounter {
     private StringProperty text = new SimpleStringProperty();
@@ -26,6 +24,7 @@ public class BuzzwordCounter {
         return text;
     }
 
+    @SuppressWarnings("Duplicates")
     public void setCount(String s) {
         int cnt = 0;
         for(String buzzword: buzzwords) {
